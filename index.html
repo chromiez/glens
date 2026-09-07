@@ -610,8 +610,8 @@
       canvas.width = Math.round(rect.h);
       canvas.height = Math.round(rect.w);
       ctx.save();
-      ctx.translate(canvas.width, 0);
-      ctx.rotate(Math.PI / 2);
+      ctx.translate(0, canvas.height);
+      ctx.rotate(-Math.PI / 2);
       ctx.drawImage(cameraVideo, rect.x, rect.y, rect.w, rect.h, 0, 0, rect.w, rect.h);
       ctx.restore();
     } else {
